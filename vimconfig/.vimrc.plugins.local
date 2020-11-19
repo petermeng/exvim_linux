@@ -1,0 +1,133 @@
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+"Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+Plugin 'vim-scripts/a.vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'mattn/calendar-vim'
+Plugin 'vim-scripts/Colour-Sampler-Pack'
+Plugin 'godlygeek/csapprox'
+Plugin 'Raimondi/delimitMate'
+Plugin 'will133/vim-dirdiff', {'name': 'dirdiff'}
+"Plugin 'jbarbero/doctabs.vim', {'name': 'doctabs'}
+Plugin 'vim-scripts/DrawIt'
+Plugin 'vim-scripts/genutils'
+Plugin 'yegappan/grep'
+Plugin 'morhetz/gruvbox'
+Plugin 'sjl/gundo.vim', {'name': 'gundo'}
+"Plugin 'vim-scripts/highlight.vim', {'name': 'highlight'}
+Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'vim-scripts/Highlighter.vim', {'name': 'highlighter'}
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'Valloric/ListToggle'
+Plugin 'vim-scripts/lookupfile'
+Plugin 'dimasg/vim-mark'
+Plugin 'vim-scripts/Marks-Browser'
+Plugin 'vim-scripts/mimicpak'
+"Plugin 'Shougo/neocomplcache.vim'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'vim-scripts/OmniCppComplete'
+Plugin 'glts/vim-magnum.git'
+Plugin 'glts/vim-radical.git'
+Plugin 'vim-scripts/ScrollColors'
+Plugin 'garbas/vim-snipmate'
+Plugin 'tomtom/tlib_vim.git', {'name': 'tlib'}
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'honza/vim-snippets'
+Plugin 'wesleyche/SrcExpl'
+Plugin 'vim-scripts/sudoku'
+"Plugin 'vim-scripts/sudoku_game'
+Plugin 'ervandew/supertab'
+Plugin 'gcmt/taboo.vim'
+"Plugin 'majutsushi/tagbar'
+"Plugin 'tisyang/taglist'
+Plugin 'tomtom/tcomment_vim', {'name': 'tcomment'}
+Plugin 'drmingdrmer/xptemplate'
+Plugin 'wesleyche/Trinity'
+"Plugin 'mbbill/undotree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'osyo-manga/vim-anzu'
+Plugin 'Townk/vim-autoclose'
+Plugin 'kballenegger/vim-autoreadwatch'
+Plugin 'mildred/vim-bufmru'
+"Plugin 'altercation/vim-colors-solarized'
+Plugin 'itchyny/vim-cursorword'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'Shougo/unite.vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'mhinz/vim-grepper'
+Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'WolfgangMehner/vim-plugins'
+Plugin 'fatih/vim-go'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'kshenoy/vim-signature'
+Plugin 'mhinz/vim-signify'
+Plugin 'justinmk/vim-sneak'
+Plugin 'mhinz/vim-janah'
+Plugin 'mhinz/vim-startify'
+"Plugin 'tpope/vim-surround'
+Plugin 'bronson/vim-visual-star-search'
+Plugin 'vimwiki/vimwiki'
+Plugin 'foxconndmd/winmanager'
+Plugin 'jnurmine/Zenburn'
+Plugin 'vim-scripts/Decho'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-afterimage'
+Plugin 'tpope/vim-obsession'
+Plugin 'wikitopian/hardmode'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
+Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'mhinz/vim-rfc'
+Plugin 'vim-scripts/rfc-syntax'
+Plugin 'python-mode/python-mode'
+Plugin 'tao12345666333/vim-vue'
+" 更高效的行内移动, f/F/t/T, 才触发
+" quickscope
+Plugin 'unblevable/quick-scope'
+" expandregion
+" 选中区块
+Plugin 'terryma/vim-expand-region'
+" ctrlsf
+" 类似sublimetext的搜索
+" In CtrlSF window:
+" 回车/o, 打开
+" t       在tab中打开(建议)
+" T - Lkie t but focus CtrlSF window instead of opened new tab.
+" q - Quit CtrlSF window.
+Plugin 'dyng/ctrlsf.vim'
+" ctrlsf
+" 类似sublimetext的搜索
+" In CtrlSF window:
+" 回车/o, 打开
+" t       在tab中打开(建议)
+" T - Lkie t but focus CtrlSF window instead of opened new tab.
+" q - Quit CtrlSF window.
+Plugin 'dyng/ctrlsf.vim'
+" rainbow_parentheses
+" 括号显示增强
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'vim-scripts/TaskList.vim'
+

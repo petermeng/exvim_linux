@@ -1,0 +1,133 @@
+" The following are examples of different formats supported.
+" Keep Plug commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plug 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plug 'L9'
+" Git plugin not hosted on GitHub
+Plug 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plug 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+"Plug 'ascenator/L9', {'as': 'newL9'}
+
+" All of your Plugs must be added before the following line
+Plug 'vim-scripts/a.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'mattn/calendar-vim'
+Plug 'vim-scripts/Colour-Sampler-Pack'
+Plug 'godlygeek/csapprox'
+Plug 'Raimondi/delimitMate'
+Plug 'will133/vim-dirdiff', {'as': 'dirdiff'}
+"Plug 'jbarbero/doctabs.vim', {'as': 'doctabs'}
+Plug 'vim-scripts/DrawIt'
+Plug 'vim-scripts/genutils'
+Plug 'yegappan/grep'
+Plug 'morhetz/gruvbox'
+Plug 'sjl/gundo.vim', {'as': 'gundo'}
+"Plug 'vim-scripts/highlight.vim', {'as': 'highlight'}
+Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'vim-scripts/Highlighter.vim', {'as': 'highlighter'}
+Plug 'nanotech/jellybeans.vim'
+Plug 'Valloric/ListToggle'
+Plug 'vim-scripts/lookupfile'
+Plug 'dimasg/vim-mark'
+Plug 'vim-scripts/Marks-Browser'
+Plug 'vim-scripts/mimicpak'
+"Plug 'Shougo/neocomplcache.vim'
+"Plug 'scrooloose/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-scripts/OmniCppComplete'
+Plug 'https://github.com/glts/vim-magnum.git'
+Plug 'https://github.com/glts/vim-radical.git'
+Plug 'vim-scripts/ScrollColors'
+Plug 'garbas/vim-snipmate'
+Plug 'https://github.com/tomtom/tlib_vim.git', {'as': 'tlib'}
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'honza/vim-snippets'
+Plug 'wesleyche/SrcExpl'
+Plug 'vim-scripts/sudoku'
+"Plug 'vim-scripts/sudoku_game'
+Plug 'ervandew/supertab'
+Plug 'gcmt/taboo.vim'
+"Plug 'majutsushi/tagbar'
+"Plug 'tisyang/taglist'
+Plug 'tomtom/tcomment_vim', {'as': 'tcomment'}
+Plug 'drmingdrmer/xptemplate'
+Plug 'wesleyche/Trinity'
+"Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'osyo-manga/vim-anzu'
+Plug 'Townk/vim-autoclose'
+Plug 'kballenegger/vim-autoreadwatch'
+Plug 'mildred/vim-bufmru'
+"Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/vim-cursorword'
+Plug 'ryanoasis/vim-devicons'
+Plug 'Shougo/unite.vim'
+Plug 'tpope/vim-endwise'
+Plug 'mhinz/vim-grepper'
+Plug 'artur-shaik/vim-javacomplete2'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'WolfgangMehner/vim-plugins'
+Plug 'fatih/vim-go'
+Plug 'sheerun/vim-polyglot'
+Plug 'kshenoy/vim-signature'
+Plug 'mhinz/vim-signify'
+Plug 'justinmk/vim-sneak'
+Plug 'mhinz/vim-janah'
+Plug 'mhinz/vim-startify'
+"Plug 'tpope/vim-surround'
+Plug 'bronson/vim-visual-star-search'
+Plug 'vimwiki/vimwiki'
+Plug 'foxconndmd/winmanager'
+Plug 'jnurmine/Zenburn'
+Plug 'vim-scripts/Decho'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'tpope/vim-afterimage'
+Plug 'tpope/vim-obsession'
+Plug 'wikitopian/hardmode'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'junegunn/vim-easy-align'
+Plug 'tacahiroy/ctrlp-funky'
+Plug 'mhinz/vim-rfc'
+Plug 'vim-scripts/rfc-syntax'
+Plug 'python-mode/python-mode'
+Plug 'tao12345666333/vim-vue'
+" 更高效的行内移动, f/F/t/T, 才触发
+" quickscope
+Plug 'unblevable/quick-scope'
+" expandregion
+" 选中区块
+Plug 'terryma/vim-expand-region'
+" ctrlsf
+" 类似sublimetext的搜索
+" In CtrlSF window:
+" 回车/o, 打开
+" t       在tab中打开(建议)
+" T - Lkie t but focus CtrlSF window instead of opened new tab.
+" q - Quit CtrlSF window.
+Plug 'dyng/ctrlsf.vim'
+" ctrlsf
+" 类似sublimetext的搜索
+" In CtrlSF window:
+" 回车/o, 打开
+" t       在tab中打开(建议)
+" T - Lkie t but focus CtrlSF window instead of opened new tab.
+" q - Quit CtrlSF window.
+Plug 'dyng/ctrlsf.vim'
+" rainbow_parentheses
+" 括号显示增强
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'vim-scripts/TaskList.vim'
+
