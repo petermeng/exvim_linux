@@ -75,6 +75,14 @@ else
 endif
 scriptencoding utf-8
 
+if has('python')
+    set pyx=2
+    echo "python2"
+elseif has('python3')
+    set pyx=3
+    echo "python3"
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 通用设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

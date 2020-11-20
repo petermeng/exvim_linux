@@ -5,7 +5,8 @@
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plug 'L9'
 " Git plugin not hosted on GitHub
-Plug 'git://git.wincent.com/command-t.git'
+" Plug 'git://git.wincent.com/command-t.git'
+Plug 'wincent/command-t'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plug 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -102,7 +103,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'mhinz/vim-rfc'
 Plug 'vim-scripts/rfc-syntax'
-Plug 'python-mode/python-mode'
+"Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'tao12345666333/vim-vue'
 " 更高效的行内移动, f/F/t/T, 才触发
 " quickscope
