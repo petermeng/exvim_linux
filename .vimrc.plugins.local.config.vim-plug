@@ -1714,3 +1714,4 @@ nnoremap <leader><leader>r :ReplaceTo<space>
 set background=dark
 let g:onedark_termcolors=256
 colorscheme onedark
+let g:snipMate = { 'snippet_version' : 1 }
