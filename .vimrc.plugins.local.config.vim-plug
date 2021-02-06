@@ -1610,6 +1610,7 @@ vmap <leader><leader>q <plug>(QuickScopeToggle)
     map <Leader><Leader>k <Plug>(easymotion-k)
     map <Leader><leader>l <Plug>(easymotion-lineforward)
     map <Leader><leader>. <Plug>(easymotion-repeat)
+    nmap <Leader><leader>ss        <Plug>(easymotion-s2)
 " }}}
 
 """""""""""""""""""""""""""""""""""""""tasklist Configuration""""""""""
@@ -1715,3 +1716,10 @@ set background=dark
 let g:onedark_termcolors=256
 colorscheme onedark
 let g:snipMate = { 'snippet_version' : 1 }
+
+"vim-session config
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
+let g:session_directory = "~/.session_history/"
+nnoremap <leader>se :SaveSession<cr>
+nnoremap <leader>os :OpenSession<cr>
