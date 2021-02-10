@@ -686,3 +686,6 @@ endif
 " vim:ts=4:sw=4:sts=4 et fdm=marker:
 nnoremap <C-.> :bn<CR>
 nnoremap <C-,> :bp<CR>
+let &t_SI = "\<ESC>]50;CursorShape=1\x7"
+let &t_SR = "\<ESC>]50;CursorShape=2\x7"
+let &t_EI = "\<ESC>]50;CursorShape=0\x7"
