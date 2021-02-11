@@ -163,3 +163,4 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rickhowe/blockwisediff.vim'
 Plug 'andymass/vim-matchup'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'brooth/far.vim'

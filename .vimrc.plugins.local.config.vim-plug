@@ -233,6 +233,10 @@ if has("persistent_undo")
     set undodir=~/.undodir/
     set undofile
 endif
+map L :UndotreeToggle<CR>
+let g:undotree_DiffAutoOpen = 1
+let g:undotree_SetFocusWhenToggle = 1
+let g:undotree_ShortIndicators = 1
 
 "auto-pairs configuration
 let g:AutoPairsShortcutToggle='<C-A-p>'
