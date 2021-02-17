@@ -163,4 +163,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rickhowe/blockwisediff.vim'
 Plug 'andymass/vim-matchup'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'brooth/far.vim'
+Plug 'brooth/far.vim', { 'on': ['F', 'Far', 'Fardo'] }
+Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or type i) i] i} ip
+Plug 'ntpeters/vim-better-whitespace', { 'on': ['EnableWhitespace', 'ToggleWhitespace'] } "displays trailing whitespace (after :EnableWhitespace, vim slows down)

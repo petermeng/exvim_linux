@@ -1727,3 +1727,12 @@ let g:session_autosave = 'no'
 let g:session_directory = "~/.session_history/"
 nnoremap <leader>se :SaveSession<cr>
 nnoremap <leader>os :OpenSession<cr>
+
+" === vim-better-whitespace
+let g:better_whitespace_enable=0
+
+" wildfire
+" This selects the next closest text object
+map <SPACE> <Plug>(wildfire-fuel)
+" This selects the previous closest text object.
+vmap <C-SPACE> <Plug>(wildfire-water)
