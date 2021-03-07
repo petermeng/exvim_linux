@@ -134,3 +134,77 @@ map <leader>ass :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>
 map <leader>ars :source my.vim<cr> :rviminfo my.viminfo<cr>
 
 nnoremap <unique> <silent> <F2> :EXProjectToggle<cr>
+
+" ===
+" === Markdown Settings
+" ===
+" Snippets
+if exists('g:exvim_custom_path')
+    let md_snippets_path = g:exvim_custom_path.'/md-snippets.vim'
+else
+    let md_snippets_path = '~/md-snippets.vim'
+endif
+if filereadable(expand(md_snippets_path))
+    exec 'source ' . fnameescape(md_snippets_path)
+endif
+" auto spell
+autocmd BufRead,BufNewFile *.md setlocal spell
+
+" Press space twice to jump to the next '<++>' and edit it
+noremap <LEADER><LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+" ===
+" === Tab management
+" ===
+" Create a new tab with tu
+noremap tu :tabe<CR>
+" Move around tabs with tn and ti
+noremap tn :-tabnext<CR>
+noremap ti :+tabnext<CR>
+" Move the tabs with tmn and tmi
+noremap tmn :-tabmove<CR>
+noremap tmi :+tabmove<CR>
+
+" ===
+" === Window management
+" ===
+" Use <space> + new arrow keys for moving the cursor around windows
+noremap <LEADER>w <C-w>w
+noremap <LEADER>kk <C-w>k
+noremap <LEADER>jj <C-w>j
+noremap <LEADER>hh <C-w>h
+noremap <LEADER>ll <C-w>l
+noremap qf <C-w>o
+
+" Disable the default s key
+noremap s <nop>
+
+" split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
+noremap sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+noremap sj :set splitbelow<CR>:split<CR>
+noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+noremap sl :set splitright<CR>:vsplit<CR>
+
+" Resize splits with arrow keys
+noremap <up> :res +5<CR>
+noremap <down> :res -5<CR>
+noremap <left> :vertical resize-5<CR>
+noremap <right> :vertical resize+5<CR>
+
+" Place the two screens up and down
+noremap sh <C-w>t<C-w>K
+" Place the two screens side by side
+noremap sv <C-w>t<C-w>H
+
+" Rotate screens
+noremap srh <C-w>b<C-w>K
+noremap srv <C-w>b<C-w>H
+
+" Search
+noremap <LEADER><CR> :nohlsearch<CR>
+
+" Adjacent duplicate words
+noremap <LEADER>dw /\(\<\w\+\>\)\_s*\1
+
+" Spelling Check with <space>sc
+noremap <LEADER>sc :set spell!<CR>
