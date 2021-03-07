@@ -137,7 +137,7 @@ Plug 'chxuan/prepare-code'
 Plug 'chxuan/cpp-mode'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+" Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'haya14busa/incsearch.vim'
 Plug 'terryma/vim-smooth-scroll'
 Plug 'tpope/vim-fugitive'
