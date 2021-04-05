@@ -47,7 +47,7 @@ set encoding=utf-8 " 设置vim内部使用的字符编码,原来是cp936
 lang messages zh_CN.UTF-8 " 解决consle输出乱码 
 
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 syntax enable
