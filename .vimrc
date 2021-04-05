@@ -684,6 +684,7 @@ if filereadable(expand(vimrc_local_path))
 endif
 
 " vim:ts=4:sw=4:sts=4 et fdm=marker:
+autocmd FileType makefile set noexpandtab
 nnoremap <C-.> :bn<CR>
 nnoremap <C-,> :bp<CR>
 let &t_SI = "\<ESC>]50;CursorShape=1\x7"

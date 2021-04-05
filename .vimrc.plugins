@@ -74,7 +74,7 @@ if has('gui_running')
         call exsymbol#register_hotkey( 102, 0, '<M-L>', ":EXSymbolList<CR>:redraw<CR>/", 'List all symbols and stay in search mode.' )
     endif
 endif
-let g:ex_symbol_select_cmd = 'TS'
+let g:ex_symbol_select_cmd = 'TSelect'
 
 " ex-cscope
 " ---------------------------------------------------
