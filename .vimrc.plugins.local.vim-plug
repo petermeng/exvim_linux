@@ -166,9 +166,18 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'brooth/far.vim', { 'on': ['F', 'Far', 'Fardo'] }
 Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or type i) i] i} ip
 Plug 'ntpeters/vim-better-whitespace', { 'on': ['EnableWhitespace', 'ToggleWhitespace'] } "displays trailing whitespace (after :EnableWhitespace, vim slows down)
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'instant-markdown/vim-instant-markdown'
 Plug 'dkarter/bullets.vim'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'pechorin/any-jump.vim'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Git
+Plug 'theniceboy/vim-gitignore', { 'for': ['gitignore', 'vim-plug'] }
+Plug 'fszymanski/fzf-gitignore', { 'do': ':UpdateRemotePlugins' }
+"Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
+Plug 'cohama/agit.vim'
+Plug 'luochen1990/rainbow'
+Plug 'Yggdroot/indentLine'
