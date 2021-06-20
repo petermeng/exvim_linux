@@ -1772,7 +1772,17 @@ command! BD call fzf#run(fzf#wrap({
 noremap <c-d> :BD<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
-
+"=================================="
+"               FZF                "
+"=================================="
+        " ~~~~~ Open FZF search in vim
+                map <C-f> <Esc><Esc>:Files!<CR>
+                inoremap <C-f> <Esc><Esc>:BLines!<CR>
+                map <C-g> <Esc><Esc>:BCommits!<CR>
+        " ~~~~~ Bat Preview Theme
+                let $BAT_THEME = 'Solarized (dark)'
+        " ~~~~~ Let FZF find hidden files and folders
+                "let $FZF_DEFAULT_COMMAND='find . -not -path "*/\.git*" -type f -print'
 
 " ===
 " === Leaderf
@@ -2082,3 +2092,72 @@ let g:rainbow_conf = {
             \		'css': 0,
             \	}
             \}
+
+"=================================="
+"              GOYO                "
+"=================================="
+        " ~~~~~ Goyo plugin makes text more readable when writing prose:
+                map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
+        " ~~~~~ Enable Goyo by default for mutt writting
+        " ~~~~~ Goyo's width will be the line limit in mutt.
+                autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
+                autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo \| set bg=light
+                autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
+                autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
+
+"=================================="
+"           LimeLight              "
+"=================================="
+        " ~~~~~ Color name (:help cterm-colors) or ANSI code
+                let g:limelight_conceal_ctermfg = 'gray'
+                let g:limelight_conceal_ctermfg = 240
+        " ~~~~~ Color name (:help gui-colors) or RGB color
+                let g:limelight_conceal_guifg = 'DarkGray'
+                let g:limelight_conceal_guifg = '#777777'
+        " ~~~~~ Default: 0.5
+                let g:limelight_default_coefficient = 0.7
+        " ~~~~~ Number of preceding/following paragraphs to include (default: 0)
+                let g:limelight_paragraph_span = 1
+        " ~~~~~ Beginning/end of paragraph
+        " ~~~~~ When there's no empty line between the paragraphs
+        " ~~~~~ and each paragraph starts with indentation
+                let g:limelight_bop = '^\s'
+                let g:limelight_eop = '\ze\n^\s'
+        " ~~~~~ Highlighting priority (default: 10)
+        " ~~~~~ Set it to -1 not to overrule hlsearch
+                let g:limelight_priority = -1
+        " ~~~~~ Integration with goyo
+                autocmd! User GoyoEnter Limelight
+                autocmd! User GoyoLeave Limelight! \| set bg=light
+
+"git-blame.vim
+nnoremap <Leader>gb :<C-u>call gitblame#echo()<CR>
+
+"rhysd/committia.vim
+" You can get the information about the windows with first argument as a dictionary.
+"
+"   KEY              VALUE                      AVAILABILITY
+"-----------------------------------------------------------------------------------
+"   vcs            : vcs type (e.g. 'git')   -> all hooks
+"   edit_winnr     : winnr of edit window    -> ditto
+"   edit_bufnr     : bufnr of edit window    -> ditto
+"   diff_winnr     : winnr of diff window    -> ditto
+"   diff_bufnr     : bufnr of diff window    -> ditto
+"   status_winnr   : winnr of status window  -> all hooks except for 'diff_open' hook
+"   status_bufnr   : bufnr of status window  -> ditto
+
+let g:committia_hooks = {}
+function! g:committia_hooks.edit_open(info)
+    " Additional settings
+    setlocal spell
+
+    " If no commit message, start with insert mode
+    if a:info.vcs ==# 'git' && getline(1) ==# ''
+        startinsert
+    endif
+
+    " Scroll the diff window from insert mode
+    " Map <C-n> and <C-p>
+    imap <buffer><C-n> <Plug>(committia-scroll-diff-down-half)
+    imap <buffer><C-p> <Plug>(committia-scroll-diff-up-half)
+  endfunction

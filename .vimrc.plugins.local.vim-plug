@@ -181,3 +181,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
 Plug 'luochen1990/rainbow'
 Plug 'Yggdroot/indentLine'
+Plug 'junegunn/goyo.vim' " Focus Mode
+Plug 'junegunn/limelight.vim' " Limelight - Additional Focus mode stuff with Goyo
+Plug 'zivyangll/git-blame.vim'
+Plug 'junegunn/gv.vim'
+Plug 'jreybert/vimagit'
+Plug 'rhysd/committia.vim'
+Plug 'gregsexton/gitv', {'on': ['Gitv']}
+Plug 'idanarye/vim-merginal'
