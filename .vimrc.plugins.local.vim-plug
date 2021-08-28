@@ -190,3 +190,4 @@ Plug 'rhysd/committia.vim'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'idanarye/vim-merginal'
 Plug 'rhysd/git-messenger.vim'
+Plug 'rhysd/conflict-marker.vim'
