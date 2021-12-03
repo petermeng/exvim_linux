@@ -175,7 +175,8 @@ Plug 'pechorin/any-jump.vim'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Git
 Plug 'theniceboy/vim-gitignore', { 'for': ['gitignore', 'vim-plug'] }
-Plug 'fszymanski/fzf-gitignore', { 'do': ':UpdateRemotePlugins' }
+"Plug 'fszymanski/fzf-gitignore', { 'do': ':UpdateRemotePlugins' }
+Plug 'theniceboy/fzf-gitignore', { 'do': ':UpdateRemotePlugins' }
 "Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
@@ -190,3 +191,11 @@ Plug 'rhysd/committia.vim'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'idanarye/vim-merginal'
 Plug 'rhysd/git-messenger.vim'
+Plug 'rhysd/conflict-marker.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'ldelossa/calltree.nvim'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+Plug 'justinmk/vim-syntax-extra'
