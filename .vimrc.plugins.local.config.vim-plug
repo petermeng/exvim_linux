@@ -20,10 +20,11 @@ endif
 """""""""""相关的插件配置开关"""""""""""""""""""
 
 """""""""""主题设置开关"""""""""""""""""""""""""
-let g:gruvbox_theme_enable=0
+let g:gruvbox_theme_enable=1
 let g:solardark_theme_enable=0
 let g:jellybeans_theme_enable=0
 let g:zenburn_theme_enable=0
+let g:onedark_theme_enable=0
 
 """""""""""插件开关"""""""""""""""""""""""""""""
 let g:anzu_plug_enable=1
@@ -221,7 +222,7 @@ endif
 
 "gruvbox configuration
 if g:gruvbox_theme_enable
-	set background=light
+	set background=dark
 	let g:gruvbox_italic=1
 	let g:gruvbox_bold = 0
 	let g:gruvbox_invert_tabline=1
@@ -1716,9 +1717,11 @@ nnoremap C :ChangeText<cr>
 nnoremap <leader><leader>r :ReplaceTo<space>
 
 " 主题设置
-set background=dark
-let g:onedark_termcolors=256
-colorscheme onedark
+if g:onedark_theme_enable
+  set background=dark
+  let g:onedark_termcolors=256
+  colorscheme onedark
+endif
 let g:snipMate = { 'snippet_version' : 1 }
 
 "vim-session config

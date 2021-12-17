@@ -75,10 +75,10 @@ else
 endif
 scriptencoding utf-8
 
-if has('python')
-    set pyx=2
-elseif has('python3')
+if has('python3')
     set pyx=3
+elseif has('python')
+    set pyx=2
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -390,13 +390,13 @@ if has('gui_running')
                 set guifont=Lucida_Console:h11:cANSI
             endif
         endif
-        set guifont=DroidSansMono\ Nerd\ Font\ Regular 18 " 设置字体
+        set guifont=DroidSansMono\ Nerd\ Font\ Regular 12 " 设置字体
         "set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete:h18 " 设置字体
     endfunction
 endif
 else
 "    set guifont=DroidSansMono\ Nerd\ Font:h20 " 设置字体
-    set guifont=DroidSansMono\ Nerd\ Font\ Regular\ 18 " 设置字体
+    set guifont=DroidSansMono\ Nerd\ Font\ Regular\ 12 " 设置字体
     "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 endif
 

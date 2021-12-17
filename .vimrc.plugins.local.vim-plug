@@ -199,3 +199,8 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 Plug 'justinmk/vim-syntax-extra'
+Plug 'inside/vim-search-pulse'
+Plug 'puremourning/vimspector'
+Plug 'AndrewRadev/sideways.vim'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'matze/vim-move'
