@@ -199,3 +199,22 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 Plug 'justinmk/vim-syntax-extra'
+Plug 'inside/vim-search-pulse'
+" Plug 'puremourning/vimspector'
+Plug 'AndrewRadev/sideways.vim'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'matze/vim-move'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'vim-scripts/ShowTrailingWhitespace'
+Plug 'mg979/vim-xtabline'
+Plug 'mg979/do.vim'
+Plug 'mg979/vim-yanktools'
+Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
+Plug 'mg979/rgb.vim'
+Plug 'Shougo/echodoc.vim'
+Plug 'liuchengxu/vista.vim'
+"Plug 'prabirshrestha/vim-lsp'
+"Plug 'mattn/vim-lsp-settings'
+Plug 't9md/vim-quickhl'
+Plug 'bagrat/vim-buffet'
+Plug 't9md/vim-choosewin'
