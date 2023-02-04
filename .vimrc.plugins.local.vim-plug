@@ -221,3 +221,4 @@ Plug 't9md/vim-choosewin'
 Plug '/mnt/g/project/ubuntu/main/vimfiles/bundle/vim-l9'
 Plug 'liuchengxu/vim-clap', { 'do': { -> clap#installer#force_download() } }
 Plug 'liuchengxu/vista.vim'
+Plug 'dstein64/vim-startuptime'
