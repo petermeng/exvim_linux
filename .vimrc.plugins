@@ -17,7 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ex-config:
 " ---------------------------------------------------
-Plugin 'exvim/ex-config'
+Plugin 'petermeng/ex-config'
 nnoremap <unique> <leader>ve :call exconfig#edit_cur_vimentry ()<CR>
 
 " ex-utility:
@@ -37,7 +37,7 @@ Plugin 'exvim/ex-aftercolors'
 
 " ex-vimentry
 " ---------------------------------------------------
-Plugin 'exvim/ex-vimentry'
+Plugin 'petermeng/ex-vimentry'
 
 " ex-project
 " ---------------------------------------------------
@@ -45,7 +45,7 @@ Plugin 'exvim/ex-project'
 
 " ex-gsearch
 " ---------------------------------------------------
-Plugin 'exvim/ex-gsearch'
+Plugin 'petermeng/ex-gsearch'
 
 call exgsearch#register_hotkey( 100, 0, '<leader>gs', ":EXGSearchToggle<CR>", 'Toggle global search window.' )
 call exgsearch#register_hotkey( 101, 0, '<leader>gg', ":EXGSearchCWord<CR>", 'Search current word.' )

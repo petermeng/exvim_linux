@@ -17,7 +17,7 @@ Plug 'VundleVim/Vundle.vim'
 
 " ex-config:
 " ---------------------------------------------------
-Plug 'exvim/ex-config'
+Plug 'petermeng/ex-config'
 nnoremap <unique> <leader>ve :call exconfig#edit_cur_vimentry ()<CR>
 
 " ex-utility:
@@ -37,7 +37,7 @@ Plug 'exvim/ex-aftercolors'
 
 " ex-vimentry
 " ---------------------------------------------------
-Plug 'exvim/ex-vimentry'
+Plug 'petermeng/ex-vimentry'
 
 " ex-project
 " ---------------------------------------------------
@@ -45,7 +45,7 @@ Plug 'exvim/ex-project'
 
 " ex-gsearch
 " ---------------------------------------------------
-Plug 'exvim/ex-gsearch'
+Plug 'petermeng/ex-gsearch'
 
 " ex-tagselect
 " ---------------------------------------------------

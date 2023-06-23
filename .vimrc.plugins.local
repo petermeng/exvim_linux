@@ -133,3 +133,5 @@ Plugin 'dyng/ctrlsf.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-scripts/TaskList.vim'
 
+Plugin 'petermeng/cscope-fzf'
+Plugin 'zeminzhou/diffview.vim'
