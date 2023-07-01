@@ -20,4 +20,12 @@ if exist "%TMP%" (
     echo   ^|- move %TMP% to %TARGET%
     move /Y "%TMP%" "%TARGET%" > nul
 )
+if exist "%INTMP%" (
+    echo   ^|- move %INTMP% to %INTARGET%
+    move /Y "%INTMP%" "%INTARGET%" > nul
+)
+if exist "%POTMP%" (
+    echo   ^|- move %POTMP% to %POTARGET%
+    move /Y "%POTMP%" "%POTARGET%" > nul
+)
 echo   ^|- done!
