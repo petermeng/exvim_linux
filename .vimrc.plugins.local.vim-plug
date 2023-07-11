@@ -226,3 +226,7 @@ Plug 'dstein64/vim-win'
 Plug 'petermeng/cscope-fzf'
 Plug 'zeminzhou/diffview.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'gelguy/wilder.nvim'
+" To use Python remote plugin features in Vim, can be skipped
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
